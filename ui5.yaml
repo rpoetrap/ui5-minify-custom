@@ -1,0 +1,7 @@
+specVersion: "3.0"
+kind: extension
+type: task
+metadata:
+  name: ui5-minify-custom
+task:
+  path: lib/minify.js

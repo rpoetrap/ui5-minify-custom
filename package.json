@@ -1,0 +1,22 @@
+{
+  "name": "ui5-minify-custom",
+  "version": "1.0.0",
+  "description": "Custom minify for SAP UI5 Task",
+  "homepage": "https://github.com/rpoetrap/ui5-minify-custom#readme",
+  "bugs": {
+    "url": "https://github.com/rpoetrap/ui5-minify-custom/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpoetrap/ui5-minify-custom.git"
+  },
+  "license": "ISC",
+  "author": "rpoetrap",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "@ui5/builder": "^3.0.0 || ^4.0.0",
+    "@ui5/fs": "^3.0.0 || ^4.0.0"
+  }
+}
