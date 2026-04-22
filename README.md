@@ -1,17 +1,21 @@
+# ui5-minify-custom
+
+Custom minification task for SAP UI5 build tooling. Replaces the standard `minify` task with configurable control over source maps and debug resource output.
+
 ### Install
 ```bash
 npm install -D https://github.com/rpoetrap/ui5-minify-custom
 ```
 
 ### Configuration Options (in `$yourapp/ui5.yaml`)
-- **omitSourceMapResources**: `boolean`
-  enable this to exclude source maps from build result
+- **omitSourceMapResources**: `boolean` (default: `true`)
+  Exclude source maps from build result.
 
-- **useInputSourceMaps**: `boolean`
-  enable this to add any existing source maps as a reference to be minifed
+- **useInputSourceMaps**: `boolean` (default: `false`)
+  Use existing source maps as references during minification.
 
-- **omitDebugResources**: `boolean`
-  enable this to exclude debug variant from build result
+- **omitDebugResources**: `boolean` (default: `true`)
+  Exclude debug variants (unminified copies) from build result.
 
 
 ## Usage
