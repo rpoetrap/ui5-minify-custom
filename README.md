@@ -62,7 +62,7 @@ npm install -D @rpoetrap/ui5-minify-custom
     ```
 
 4. Exclude the standard minify task from the build script in `$yourapp/package.json` by adding `--exclude-task minify` parameter to the ui5 command:
-    ```json
+    ```jsonc
     {
       // ...
 
