@@ -3,8 +3,14 @@
 Custom minification task for SAP UI5 build tooling. Replaces the standard `minify` task with configurable control over source maps and debug resource output.
 
 ### Install
+Add the GitHub Packages registry for the `@rpoetrap` scope to your `.npmrc`:
+```
+@rpoetrap:registry=https://npm.pkg.github.com
+```
+
+Then install:
 ```bash
-npm install -D https://github.com/rpoetrap/ui5-minify-custom
+npm install -D @rpoetrap/ui5-minify-custom
 ```
 
 ### Configuration Options (in `$yourapp/ui5.yaml`)
@@ -19,12 +25,17 @@ npm install -D https://github.com/rpoetrap/ui5-minify-custom
 
 
 ## Usage
-1. Install the dependency inside devDependencies:
-    ```bash
-    npm install -D https://github.com/rpoetrap/ui5-minify-custom
+1. Add the GitHub Packages registry for the `@rpoetrap` scope to your `$yourapp/.npmrc`:
+    ```
+    @rpoetrap:registry=https://npm.pkg.github.com
     ```
 
-2. Register the task in your `$yourapp/ui5.yaml`:
+2. Install the dependency inside devDependencies:
+    ```bash
+    npm install -D @rpoetrap/ui5-minify-custom
+    ```
+
+3. Register the task in your `$yourapp/ui5.yaml`:
     ```yaml
     [...]
     builder:
@@ -50,7 +61,7 @@ npm install -D https://github.com/rpoetrap/ui5-minify-custom
     [...]
     ```
 
-3. Exclude the standard minify task from the build script in `$yourapp/package.json` by adding `--exclude-task minify` parameter to the ui5 command:
+4. Exclude the standard minify task from the build script in `$yourapp/package.json` by adding `--exclude-task minify` parameter to the ui5 command:
     ```json
     {
       // ...
